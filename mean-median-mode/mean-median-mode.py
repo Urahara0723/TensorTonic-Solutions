@@ -7,8 +7,7 @@ def mean_median_mode(x: list) -> dict:
     """
     mean = float(np.mean(x))
     median = float(np.median(x))
-    c = Counter(x)
-    mode = float(c.most_common(1)[0][0])
+    mode = float(Counter(x).most_common(1)[0][0])
     
     return {"mean":mean,
            "median":median,
